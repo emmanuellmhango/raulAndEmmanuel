@@ -12,13 +12,31 @@
     <p id="description"> Please fill the form</p>
     <form action="#" id="survey-form">
      <label id="name-label">name</label>
-     <input type="text" placeholder="name" id="name description" /> 
+     <input type="text" id="name" placeholder="name description" required/> 
      <label id="email-label" >email</label>
-     <input type="email" id="email" placeholder="email description"/>
+     <input type="email" id="email" placeholder="email description" required/>
      <label id="number-label">number</label>
-     <input min="5" max="100"  type="number" id="number" placeholder="number description"/>
+     <input min="5" max="100"  type="number" id="number" placeholder="number description" required/>
+     <select name="" id="dropdown">
+       <option>Value 1</option>
+       <option>Value 2</option>
+       <option>Value 3</option>
+     </select>
+     <div id="name">
+      <input type="radio" name="name" value="Male" id="name" checked>Male
+      <input type="radio" name="name" value="Female" id="name">Female
+     </div>
 
-     
+     <div id="value">
+      <input type="checkbox" name="orange" id="value" value="Orange"> Orange
+      <input type="checkbox" name="mango" id="value" value="mango"> Mango
+      <input type="checkbox" name="banana" id="value" value="Banana"> Banana
+     </div>
+
+     <textarea name="" id="" cols="30" rows="10">
+
+     </textarea>
+     <input type="submit" value="submit" id="submit">
     </form>
 
 
